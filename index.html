@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIS Jesters1 - FLL Robotics Team</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-slate-950 text-white scroll-smooth">
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    
+    <jesters-navbar></jesters-navbar>
+    
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <div id="particles" class="absolute inset-0 z-0"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-undefined-primary/20 via-transparent to-undefined-secondary/20 z-10"></div>
+            <div class="relative z-20 text-center px-4 max-w-6xl mx-auto">
+                <div class="animate-fade-in-up">
+                    <div class="text-8xl md:text-9xl mb-6 floating">🎭</div>
+                    <h1 class="text-5xl md:text-7xl font-black mb-4 bg-gradient-to-r from-undefined-primary via-undefined-secondary to-undefined-primary bg-clip-text text-transparent animate-gradient">
+                        TIS JESTERS1
+                    </h1>
+                    <p class="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
+                        Forging the future of robotics with creativity, innovation, and a touch of jest
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="#about" class="btn-primary px-8 py-3 rounded-full font-bold transition-all duration-300">
+                            <i data-feather="zap" class="inline-block w-5 h-5 mr-2"></i>
+                            Discover Our Mission
+                        </a>
+                        <a href="#projects" class="btn-secondary px-8 py-3 rounded-full font-bold transition-all duration-300">
+                            <i data-feather="shield" class="inline-block w-5 h-5 mr-2"></i>
+                            Our Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <i data-feather="chevron-down" class="w-8 h-8 text-undefined-primary"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 px-4 max-w-6xl mx-auto">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-undefined-primary to-undefined-secondary bg-clip-text text-transparent">
+                    Who Are We?
+                </h2>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                    A passionate First Lego League team transforming challenges into innovations
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll">
+                    <div class="relative">
+                        <img src="http://static.photos/technology/640x360/42" alt="Team Photo" class="rounded-2xl shadow-2xl w-full">
+                        <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-undefined-dark/80 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <h3 class="text-2xl font-bold mb-2">2023-2024 Season</h3>
+                            <p class="text-slate-300">Masterpiece® Challenge</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6 animate-on-scroll">
+                    <div class="feature-card p-6 rounded-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-undefined-primary/20 flex items-center justify-center">
+                                <i data-feather="target" class="w-6 h-6 text-undefined-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Our Mission</h3>
+                                <p class="text-slate-400">To innovate through robotics while embodying the spirit of creative problem-solving and teamwork.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card p-6 rounded-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-undefined-secondary/20 flex items-center justify-center">
+                                <i data-feather="users" class="w-6 h-6 text-undefined-secondary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Core Values</h3>
+                                <p class="text-slate-400">Discovery, Innovation, Impact, Inclusion, Teamwork, and Fun - the pillars of our journey.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card p-6 rounded-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-undefined-light/20 flex items-center justify-center">
+                                <i data-feather="award" class="w-6 h-6 text-undefined-light"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Achievements</h3>
+                                <p class="text-slate-400">Regional Champions 2023 | Innovation Project Award | Core Values Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 px-4 bg-gradient-to-b from-slate-900 to-slate-950">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-undefined-primary to-undefined-secondary bg-clip-text text-transparent">
+                        Our Masterpiece Projects
+                    </h2>
+                    <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                        Explore our innovative solutions and robot designs that defy expectations
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="project-card rounded-2xl overflow-hidden animate-on-scroll">
+                        <img src="http://static.photos/technology/480x320/77" alt="Robot Design" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">JesterBot X1</h3>
+                            <p class="text-slate-400 mb-4">Our championship-winning robot with modular attachments and precision programming.</p>
+                            <div class="flex items-center text-undefined-primary font-semibold">
+                                <span>View Details</span>
+                                <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card rounded-2xl overflow-hidden animate-on-scroll">
+                        <img src="http://static.photos/science/480x320/88" alt="Innovation Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">EcoCircuit Initiative</h3>
+                            <p class="text-slate-400 mb-4">Revolutionary e-waste recycling solution using AI-powered sorting mechanisms.</p>
+                            <div class="flex items-center text-undefined-secondary font-semibold">
+                                <span>Learn More</span>
+                                <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card rounded-2xl overflow-hidden animate-on-scroll">
+                        <img src="http://static.photos/education/480x320/99" alt="Outreach" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">RoboJest Academy</h3>
+                            <p class="text-slate-400 mb-4">Community outreach program teaching robotics fundamentals to underprivileged youth.</p>
+                            <div class="flex items-center text-undefined-light font-semibold">
+                                <span>See Impact</span>
+                                <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="py-20 px-4 max-w-6xl mx-auto">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-undefined-primary to-undefined-secondary bg-clip-text text-transparent">
+                    Meet The Jesters
+                </h2>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                    The brilliant minds behind the machines
+                </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="team-card rounded-xl p-6 text-center animate-on-scroll">
+                    <img src="http://static.photos/people/200x200/11" alt="Team Member" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-undefined-primary">
+                    <h3 class="font-bold text-lg">Alex Chen</h3>
+                    <p class="text-undefined-primary text-sm font-semibold mb-2">Team Captain</p>
+                    <p class="text-slate-400 text-sm">Lead Programmer & Strategist</p>
+                </div>
+                
+                <div class="team-card rounded-xl p-6 text-center animate-on-scroll">
+                    <img src="http://static.photos/people/200x200/22" alt="Team Member" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-undefined-secondary">
+                    <h3 class="font-bold text-lg">Maya Patel</h3>
+                    <p class="text-undefined-secondary text-sm font-semibold mb-2">Lead Engineer</p>
+                    <p class="text-slate-400 text-sm">Mechanical Design Expert</p>
+                </div>
+                
+                <div class="team-card rounded-xl p-6 text-center animate-on-scroll">
+                    <img src="http://static.photos/people/200x200/33" alt="Team Member" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-undefined-light">
+                    <h3 class="font-bold text-lg">Sam Rodriguez</h3>
+                    <p class="text-undefined-light text-sm font-semibold mb-2">Innovation Lead</p>
+                    <p class="text-slate-400 text-sm">Research & Presentation</p>
+                </div>
+                
+                <div class="team-card rounded-xl p-6 text-center animate-on-scroll">
+                    <img src="http://static.photos/people/200x200/44" alt="Team Member" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-undefined-primary">
+                    <h3 class="font-bold text-lg">Jordan Kim</h3>
+                    <p class="text-undefined-primary text-sm font-semibold mb-2">Core Values Champion</p>
+                    <p class="text-slate-400 text-sm">Outreach Coordinator</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-4 bg-gradient-to-b from-slate-950 to-slate-900">
+            <div class="max-w-4xl mx-auto text-center animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-undefined-primary to-undefined-secondary bg-clip-text text-transparent">
+                    Join The Jest
+                </h2>
+                <p class="text-slate-400 text-lg mb-12">
+                    Interested in robotics? Want to sponsor our team? Get in touch!
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 rounded-full bg-undefined-primary/20 flex items-center justify-center mb-4">
+                            <i data-feather="mail" class="w-8 h-8 text-undefined-primary"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Email Us</h3>
+                        <p class="text-slate-400">jesters1@tis.edu</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 rounded-full bg-undefined-secondary/20 flex items-center justify-center mb-4">
+                            <i data-feather="map-pin" class="w-8 h-8 text-undefined-secondary"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Visit Us</h3>
+                        <p class="text-slate-400">Toronto International School</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 rounded-full bg-undefined-light/20 flex items-center justify-center mb-4">
+                            <i data-feather="calendar" class="w-8 h-8 text-undefined-light"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Meeting Times</h3>
+                        <p class="text-slate-400">Tues & Thurs 3:30-5:30 PM</p>
+                    </div>
+                </div>
+                
+                <form class="text-left bg-slate-900/50 rounded-2xl p-8 border border-slate-800">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 bg-slate-800 rounded-lg border border-slate-700 focus:border-undefined-primary focus:outline-none transition-colors">
+                        <input type="email" placeholder="Your Email" class="w-full px-4 py-3 bg-slate-800 rounded-lg border border-slate-700 focus:border-undefined-primary focus:outline-none transition-colors">
+                    </div>
+                    <input type="text" placeholder="Subject" class="w-full px-4 py-3 bg-slate-800 rounded-lg border border-slate-700 focus:border-undefined-primary focus:outline-none transition-colors mb-6">
+                    <textarea rows="5" placeholder="Your Message" class="w-full px-4 py-3 bg-slate-800 rounded-lg border border-slate-700 focus:border-undefined-primary focus:outline-none transition-colors mb-6"></textarea>
+                    <button type="submit" class="btn-primary px-8 py-3 rounded-full font-bold w-full md:w-auto">
+                        <i data-feather="send" class="inline-block w-5 h-5 mr-2"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <jesters-footer></jesters-footer>
+    
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
